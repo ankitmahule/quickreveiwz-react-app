@@ -1,0 +1,60 @@
+@use "variables" as *;
+@use "./styles.scss";
+.menu-text {
+  color: $light-grey;
+}
+
+.signin-button {
+  background: $button-color;
+  color: $light-grey;
+}
+
+.menu-text {
+  cursor: pointer;
+}
+
+.social-icons {
+  font-size: 1.7rem;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  -webkit-transition: all ease-out 0.5s;
+  -moz-transition: all ease-out 0.5s;
+  -o-transition: all ease-out 0.5s;
+  transition: all ease-out 0.5s;
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    li {
+      color: #eee;
+    }
+
+    a {
+      text-decoration: none;
+      color: #eee;
+      width: 5rem;
+      line-height: 6rem;
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.header-transparent {
+  @extend .header;
+  background: transparent;
+}
+
+.header-background {
+  @extend .header;
+  background: rgba(0, 0, 0);
+}
+
+.static-position {
+  position: static;
+}

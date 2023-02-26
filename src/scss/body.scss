@@ -1,0 +1,98 @@
+@use "./variables" as *;
+@use "./styles.scss";
+.upper-section {
+  background: $dark-bg;
+  background: -webkit-linear-gradient(to right, $button-color, $dark-bg);
+  background: linear-gradient(to right, $button-color, $dark-bg);
+  height: 100vh;
+}
+
+.banner {
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    justify-content: space-evenly;
+  }
+  height: 100%;
+}
+
+.banner-heading {
+  font-family: "Oswald", sans-serif;
+  color: $white;
+  @media screen and (min-width: 1367px) {
+    font-size: 3rem;
+  }
+  @media screen and (max-width: 1366px) {
+    font-size: 2.6rem;
+  }
+}
+
+.cart-img {
+  width: 40%;
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    width: 50%;
+  }
+}
+
+.search-container {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    width: 50%;
+  }
+}
+
+.facts-section {
+  opacity: 0.8;
+  @media screen and (min-width: 1024px) {
+    width: 33%;
+  }
+}
+
+.buy-now {
+  background: $button-color;
+  color: $white;
+  padding: 1rem 2.5rem;
+  margin: 1rem 0;
+}
+
+.search-section {
+  position: relative;
+}
+
+.search-button {
+  background: $button-color;
+  color: $white;
+}
+
+.search-input {
+  outline: none;
+}
+
+.products-section {
+  margin-bottom: 2.5rem;
+}
+
+.highlights {
+  list-style: disc;
+  li {
+    margin: 1.5rem 0;
+    color: $light-grey;
+    opacity: 0.8;
+  }
+}
+
+.features {
+  @media screen and (min-width: 1024px) {
+    width: 33%;
+  }
+  em {
+    color: $button-color;
+  }
+}
+
+.numbers {
+  color: $button-color;
+}
+
+.black-bg {
+  background: $black;
+  color: $white;
+}
