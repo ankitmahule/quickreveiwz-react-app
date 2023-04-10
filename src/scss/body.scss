@@ -1,23 +1,28 @@
 @use "./variables" as *;
 @use "./styles.scss";
 .upper-section {
-  background: $dark-bg;
-  background: -webkit-linear-gradient(to right, $button-color, $dark-bg);
-  background: linear-gradient(to right, $button-color, $dark-bg);
+  /* background-image: linear-gradient(
+    69.8deg,
+    rgba(25, 49, 108, 1) 2.8%,
+    rgba(1, 179, 201, 1) 97.8%
+  ); */
+  background: url("../assets/images/baner.jpg");
+  background-size: cover;
   height: 100vh;
 }
 
 .banner {
   align-items: center;
-  @media screen and (min-width: 768px) {
-    justify-content: space-evenly;
-  }
   height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .banner-heading {
+  width: 70%;
   font-family: "Oswald", sans-serif;
-  color: $white;
+  color: #bbb;
+  font-weight: bold;
   @media screen and (min-width: 1367px) {
     font-size: 3rem;
   }
@@ -73,8 +78,8 @@
 .highlights {
   list-style: disc;
   li {
-    margin: 1.5rem 0;
-    color: $light-grey;
+    margin: 2rem 1.5rem;
+    color: #aaa;
     opacity: 0.8;
   }
 }

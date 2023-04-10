@@ -1,12 +1,11 @@
 import "../scss/body.scss";
-import CART_IMG from "../assets/images/shopping.png";
 const Body = () => {
   return (
     <main>
       <section className="upper-section">
-        <section className="banner flex container mx-auto">
-          <section className="search-container md:w-1/2">
-            <h1 className="banner-heading text-amber-700 leading-tight">
+        <section className="banner flex">
+          <section className="container search-container">
+            <h1 className="banner-heading leading-tight">
               Curated and pertinent information for the e-commerce products your
               are looking for
             </h1>
@@ -25,9 +24,6 @@ const Body = () => {
                 <em className="fa fa-search"></em>
               </button>
             </div> */}
-          </section>
-          <section className="hidden lg:block cart-img">
-            <img src={CART_IMG} alt="cart" />
           </section>
         </section>
       </section>
@@ -102,7 +98,7 @@ const Body = () => {
               <p className="text-4xl mr-10">
                 <em className="fa fa-rupee"></em>400.00
               </p>
-              <button className="buy-now">Buy This Product Online</button>
+              <button className="buy-now">More Details</button>
             </div>
           </div>
           <div className="product-image py-10">
@@ -136,7 +132,7 @@ const Body = () => {
               <p className="text-4xl mr-10">
                 <em className="fa fa-rupee"></em>2400.00
               </p>
-              <button className="buy-now">Buy This Product Online</button>
+              <button className="buy-now">More Details</button>
             </div>
           </div>
         </div>
@@ -158,7 +154,7 @@ const Body = () => {
               <p className="text-4xl mr-10">
                 <em className="fa fa-rupee"></em>100.00
               </p>
-              <button className="buy-now">Buy This Product Online</button>
+              <button className="buy-now">More Details</button>
             </div>
           </div>
           <div className="product-image py-10">
